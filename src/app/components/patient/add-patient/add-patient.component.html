@@ -1,0 +1,57 @@
+<div class="card">
+    <div class="card-body">
+      <form [formGroup]="addPatientForm" (ngSubmit)="addPatient()">
+        <div class="form-group">
+          <label class="col-md-4">Name</label>
+          <input type="text" formControlName="name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="col-md-4">Class</label>
+            <input type="text" formControlName="class" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="col-md-4">Species</label>
+            <input type="text" formControlName="species" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="col-md-4">DOB</label>
+            <input type="text" formControlName="dateOfBirth" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="col-md-4">Cross Breed</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" formControlName="crossBreed" name="crossBreed" value="true" checked>
+                <label class="form-check-label" for="crossBreed">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" formControlName="crossBreed" name="crossBreed" value="false">
+                <label class="form-check-label" for="crossBreed">
+                  No
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4">Gender</label>
+            <input type="text" formControlName="gender" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="col-md-4">Warning</label>
+            <input type="text" formControlName="warning" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="col-md-4">Remarks</label>
+            <input type="text" formControlName="remarks" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label class="col-md-4">Color</label>
+            <input type="text" formControlName="color" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-red">Create Patient</button>
+        </div>
+      </form>
+    </div>
+</div>
